@@ -1,7 +1,10 @@
 ﻿# App Monitoring Dashboard
 
 ## Project Overview
-This project monitors a Node.js application using Prometheus and Grafana.
+This project monitors a Node.js application using Prometheus and Grafana. It collects application metrics and displays them in a monitoring dashboard.
+
+## Dashboard Screenshot
+![Grafana Dashboard](screenshots/grafana-dashboard.png.jpeg)
 
 ## Technologies Used
 - Node.js and Express
@@ -17,9 +20,15 @@ This project monitors a Node.js application using Prometheus and Grafana.
 - Grafana dashboard visualization
 
 ## Project Setup
-1. Run `npm install` to install dependencies.
-2. Run `npm start` to start the application.
-3. Run `docker compose up -d` to start Prometheus and Grafana.
+
+1. Install dependencies:
+   `npm install`
+
+2. Start the Node.js application:
+   `npm start`
+
+3. Start Prometheus and Grafana:
+   `docker compose up -d`
 
 ## Service URLs
 - Application: http://localhost:3000
@@ -29,9 +38,9 @@ This project monitors a Node.js application using Prometheus and Grafana.
 - Grafana: http://localhost:3001
 
 ## Monitoring Metrics
-- `http_requests_total`: Total HTTP requests.
-- `http_request_duration_seconds`: HTTP request duration.
-- `up`: Application monitoring status.
+- `http_requests_total` - Total HTTP requests.
+- `http_request_duration_seconds` - HTTP request duration.
+- `up` - Target monitoring status in Prometheus.
 
 ## Conclusion
-This project demonstrates application monitoring using Prometheus, Grafana, and Docker Compose.
+This project demonstrates application monitoring using Node.js, Prometheus, Grafana, and Docker Compose.
