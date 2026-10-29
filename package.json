@@ -1,0 +1,21 @@
+
+{
+  "name": "app-monitoring-dashboard",
+  "version": "1.0.0",
+  "description": "Application performance and health monitoring using Prometheus and Grafana",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [
+    "monitoring",
+    "prometheus",
+    "grafana"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prometheus-io/client": "^1.0.0",
+    "express": "^5.1.0"
+  }
+}
